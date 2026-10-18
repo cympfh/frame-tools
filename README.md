@@ -20,6 +20,14 @@ Steam Frame で VRChat をもっと楽しむための小さなツール集です
   ```sh
   curl -fsSL https://raw.githubusercontent.com/cympfh/vrc-wrist-notifier/main/frame/install.sh | bash
   ```
+- **[frame-care](https://github.com/cympfh/frame-care)**: 1 時間ごとの休憩、電池の残り、本体の熱さ、充電完了を視界に小さく知らせます（表示には vrc-wrist-notifier の Frame 側を使います）。
+  ```sh
+  curl -fsSL https://raw.githubusercontent.com/cympfh/frame-care/main/install.sh | bash
+  ```
+- **[frame-shot-sync](https://github.com/cympfh/frame-shot-sync)**: Frame で撮ったスクリーンショットを、PC の「ピクチャ\Steam Frame」へ自動でコピーします（Windows の PowerShell に貼ります）。
+  ```powershell
+  irm https://raw.githubusercontent.com/cympfh/frame-shot-sync/main/install.ps1 | iex
+  ```
 
 **いっしょに使うのがおすすめ**: ささけん＠さんの [Steam Frame アプリ](https://github.com/sasaken1102r/frame)（視線を VRChat に送る frameeyeosc、日本語キーボード、マイク調整、性能オーバーレイなど）。メニューから選んで入れられます。
 ```sh
@@ -40,6 +48,6 @@ curl -fsSL https://frame.sasaken1102s.net | sh
 | `GazeWinkLeft` / `GazeWinkRight` | Bool | frame-gaze-gestures | ウインクで 0.5 秒だけオン |
 | `GazeLongBlink`、`GazeLookDown` / `GazeLookLeft` / `GazeLookRight` | Bool | frame-gaze-gestures | 最初はオフ。設定でオンにすると使えます |
 
-frame-doctor と vrc-wrist-notifier はアバターのパラメーターを使いません。
+frame-doctor、vrc-wrist-notifier、frame-care、frame-shot-sync はアバターのパラメーターを使いません。
 
 非公式のツールで、Valve や VRChat とは関係ありません。
