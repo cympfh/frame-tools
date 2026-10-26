@@ -16,6 +16,10 @@ Steam Frame で VRChat をもっと楽しむための小さなツール集です
   ```sh
   curl -fsSL https://raw.githubusercontent.com/cympfh/frame-doctor/main/install.sh | bash
   ```
+- **[frame-steamvr-remote](https://github.com/cympfh/frame-steamvr-remote)**: Frame から PC の SteamVR を終了・再起動します。PC の画面が見えない、つながらないときに、Frame の SteamVR のダッシュボードにある「SteamVR リモート」から操作できます。誤操作を防ぐため、2 回押さないと実行されません（PC 側にも小さなアプリを入れます。手順はリンク先へ）。
+  ```sh
+  curl -fsSL https://raw.githubusercontent.com/cympfh/frame-steamvr-remote/main/install.sh | bash
+  ```
 - **[vrc-wrist-notifier](https://github.com/cympfh/vrc-wrist-notifier)**: VRChat で誰かが来た・帰った、招待が届いた、などを視界に小さく知らせます（VRChat の PC 側にも入れます。手順はリンク先へ）。
   ```sh
   curl -fsSL https://raw.githubusercontent.com/cympfh/vrc-wrist-notifier/main/frame/install.sh | bash
@@ -48,6 +52,6 @@ curl -fsSL https://frame.sasaken1102s.net | sh
 | `GazeWinkLeft` / `GazeWinkRight` | Bool | frame-gaze-gestures | ウインクで 0.5 秒だけオン |
 | `GazeLongBlink`、`GazeLookDown` / `GazeLookLeft` / `GazeLookRight` | Bool | frame-gaze-gestures | 最初はオフ。設定でオンにすると使えます |
 
-frame-doctor、vrc-wrist-notifier、frame-care、frame-shot-sync はアバターのパラメーターを使いません。
+frame-doctor、frame-steamvr-remote、vrc-wrist-notifier、frame-care、frame-shot-sync はアバターのパラメーターを使いません。
 
 非公式のツールで、Valve や VRChat とは関係ありません。
