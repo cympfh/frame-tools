@@ -4,36 +4,40 @@ Steam Frame で VRChat をもっと楽しむための小さなツール集です
 
 ## ツール
 
-- **[frame-vitals-osc](https://github.com/cympfh/frame-vitals-osc)**: 電池残量・充電中かどうか・本体の温度をアバターに届けます。電池メーターや「熱いと汗をかく」アバターが作れます。
+- [frame-vitals-osc](https://github.com/cympfh/frame-vitals-osc): 電池残量・充電中かどうか・本体の温度をアバターに届けます。電池メーターや「熱いと汗をかく」アバターが作れます。
   ```sh
   curl -fsSL https://raw.githubusercontent.com/cympfh/frame-vitals-osc/main/install.sh | bash
   ```
-- **[frame-gaze-gestures](https://github.com/cympfh/frame-gaze-gestures)**: 長いまばたきや上を見るなど、目の動きでアバターのギミックを切り替えます（frameeyeosc が必要です）。
+- [frame-gaze-gestures](https://github.com/cympfh/frame-gaze-gestures): 長いまばたきや上を見るなど、目の動きでアバターのギミックを切り替えます（frameeyeosc が必要です）。
   ```sh
   curl -fsSL https://raw.githubusercontent.com/cympfh/frame-gaze-gestures/main/install.sh | bash
   ```
-- **[frame-doctor](https://github.com/cympfh/frame-doctor)**: 温度・電池・SteamVR・入っているツールなどを 1 コマンドで点検し、困りごとの原因を探します。
+- [frame-doctor](https://github.com/cympfh/frame-doctor): 温度・電池・SteamVR・入っているツールなどを 1 コマンドで点検し、困りごとの原因を探します。
   ```sh
   curl -fsSL https://raw.githubusercontent.com/cympfh/frame-doctor/main/install.sh | bash
   ```
-- **[frame-steamvr-remote](https://github.com/cympfh/frame-steamvr-remote)**: Frame から PC の SteamVR を終了・再起動します。PC の画面が見えない、つながらないときに、Frame の SteamVR のダッシュボードにある「SteamVR リモート」から操作できます。誤操作を防ぐため、2 回押さないと実行されません（PC 側にも小さなアプリを入れます。手順はリンク先へ）。
+- [frame-steamvr-remote](https://github.com/cympfh/frame-steamvr-remote): Frame から PC の SteamVR を終了・再起動します。PC の画面が見えない、つながらないときに、Frame の SteamVR のダッシュボードにある「SteamVR リモート」から操作できます。誤操作を防ぐため、2 回押さないと実行されません（PC 側にも小さなアプリを入れます。手順はリンク先へ）。
   ```sh
   curl -fsSL https://raw.githubusercontent.com/cympfh/frame-steamvr-remote/main/install.sh | bash
   ```
-- **[vrc-wrist-notifier](https://github.com/cympfh/vrc-wrist-notifier)**: VRChat で誰かが来た・帰った、招待が届いた、などを視界に小さく知らせます（VRChat の PC 側にも入れます。手順はリンク先へ）。
+- [frame-video-player](https://github.com/cympfh/frame-video-player): Frame の中で動画を見ます。Frame に置いた動画、PC の「ビデオ」フォルダの動画、YouTube、360° / 180° の動画に対応。SteamVR のダッシュボードの「動画プレイヤー」から使います（PC の動画と YouTube には frame-steamvr-remote の PC 側が必要です）。
+  ```sh
+  git clone https://github.com/cympfh/frame-video-player ~/.local/src/frame-video-player && bash ~/.local/src/frame-video-player/install.sh
+  ```
+- [vrc-wrist-notifier](https://github.com/cympfh/vrc-wrist-notifier): VRChat で誰かが来た・帰った、招待が届いた、などを視界に小さく知らせます（VRChat の PC 側にも入れます。手順はリンク先へ）。
   ```sh
   curl -fsSL https://raw.githubusercontent.com/cympfh/vrc-wrist-notifier/main/frame/install.sh | bash
   ```
-- **[frame-care](https://github.com/cympfh/frame-care)**: 1 時間ごとの休憩、電池の残り、本体の熱さ、充電完了を視界に小さく知らせます（表示には vrc-wrist-notifier の Frame 側を使います）。
+- [frame-care](https://github.com/cympfh/frame-care): 1 時間ごとの休憩、電池の残り、本体の熱さ、充電完了を視界に小さく知らせます（表示には vrc-wrist-notifier の Frame 側を使います）。
   ```sh
   curl -fsSL https://raw.githubusercontent.com/cympfh/frame-care/main/install.sh | bash
   ```
-- **[frame-shot-sync](https://github.com/cympfh/frame-shot-sync)**: Frame で撮ったスクリーンショットを、PC の「ピクチャ\Steam Frame」へ自動でコピーします（Windows の PowerShell に貼ります）。
+- [frame-shot-sync](https://github.com/cympfh/frame-shot-sync): Frame で撮ったスクリーンショットを、PC の「ピクチャ\Steam Frame」へ自動でコピーします（Windows の PowerShell に貼ります）。
   ```powershell
   irm https://raw.githubusercontent.com/cympfh/frame-shot-sync/main/install.ps1 | iex
   ```
 
-**いっしょに使うのがおすすめ**: ささけん＠さんの [Steam Frame アプリ](https://github.com/sasaken1102r/frame)（視線を VRChat に送る frameeyeosc、日本語キーボード、マイク調整、性能オーバーレイなど）。メニューから選んで入れられます。
+いっしょに使うのがおすすめ: ささけん＠さんの [Steam Frame アプリ](https://github.com/sasaken1102r/frame)（視線を VRChat に送る frameeyeosc、日本語キーボード、マイク調整、性能オーバーレイなど）。メニューから選んで入れられます。
 ```sh
 curl -fsSL https://frame.sasaken1102s.net | sh
 ```
@@ -52,6 +56,6 @@ curl -fsSL https://frame.sasaken1102s.net | sh
 | `GazeWinkLeft` / `GazeWinkRight` | Bool | frame-gaze-gestures | ウインクで 0.5 秒だけオン |
 | `GazeLongBlink`、`GazeLookDown` / `GazeLookLeft` / `GazeLookRight` | Bool | frame-gaze-gestures | 最初はオフ。設定でオンにすると使えます |
 
-frame-doctor、frame-steamvr-remote、vrc-wrist-notifier、frame-care、frame-shot-sync はアバターのパラメーターを使いません。
+frame-doctor、frame-steamvr-remote、frame-video-player、vrc-wrist-notifier、frame-care、frame-shot-sync はアバターのパラメーターを使いません。
 
 非公式のツールで、Valve や VRChat とは関係ありません。
